@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     itemDropdown.mouseleave(function() {
         $(this).children('.dropdown-menu').toggle();
-    });
+    });  
 
 }); // End ready
 

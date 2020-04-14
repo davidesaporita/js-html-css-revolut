@@ -30,15 +30,12 @@ a:active {
 }
 
 a {
-    color: #aaa;
+    color: rgb(139, 149, 158);
 }
 
-a:hover {
-    color: #888;
-}
-
-a:focus {
-    color: #333;
+a:hover,
+a:active {
+    color: rgb(0, 0, 0);
 }
 
 
@@ -63,14 +60,23 @@ header {
 
 .main-menu .left-side .menu-item {
     margin-right: 40px;
+    padding: 10px 0;
 }
 
 .main-menu .right-side .menu-item {
     margin-left: 40px;
+    padding: 15px 0;
 }
 
-.main-menu .menu-item {
-    
+.menu-item .btn {
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    height: 42px;
+    padding: 11px;
+    border-radius: 20px;
+    background-color: rgb(235, 0, 141);
+    color: #fff;
 }
 
 .main-menu img {
@@ -86,10 +92,23 @@ header {
     display: none;
     position: absolute;
     width: 300px;
+    top: 50px;
+    left: -25px;
     padding: 15px;
     box-shadow: 0px 2px 6px rgba(0,0,0,.15); 
 }
 
-li.dropdown-menu-item {
+.dropdown-icon {
+    transform: rotate(90deg);
+    font-size: 6px;
+    color: rgb(139, 149, 158);
+}
+
+.dropdown-menu-item {
     display: block;
+    padding: 10px;
+}
+
+.dropdown-menu-item .new {
+
 }
