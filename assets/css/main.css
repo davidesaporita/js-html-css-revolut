@@ -7,6 +7,70 @@
 
 body {
     background-color: rgb(ff, ff, ff);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* Typography */
+a,
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none; 
+}
+
+a {
+    color: #aaa;
+}
+
+a:hover {
+    color: #888;
+}
+
+a:focus {
+    color: #333;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+}
+
+.main-menu {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.main-menu .left-side .menu-item {
+    margin-right: 40px;
+}
+
+.main-menu .right-side .menu-item {
+    margin-left: 40px;
+}
+
+.main-menu .menu-item {
+    
+}
+
+.main-menu img {
+    width: 100px;
 }
