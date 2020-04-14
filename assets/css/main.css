@@ -47,13 +47,15 @@ header {
     width: 100%;
 }
 
+/* Header - Main menu */
+
 .main-menu {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
 
-.main-menu ul {
+.main-menu > ul {
     display: flex;
     align-items: center;
     list-style: none;
@@ -73,4 +75,21 @@ header {
 
 .main-menu img {
     width: 100px;
+}
+
+/* Header - Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.15); 
+}
+
+li.dropdown-menu-item {
+    display: block;
 }

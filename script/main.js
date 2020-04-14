@@ -11,7 +11,17 @@
  */
 
 $(document).ready(function(){
+    // refs
+    var itemDropdown = $('.menu-item.dropdown');
     
-});
+    itemDropdown.mouseenter(function() {
+        $(this).children('.dropdown-menu').toggle();
+    });
+
+    itemDropdown.mouseleave(function() {
+        $(this).children('.dropdown-menu').toggle();
+    });
+
+}); // End ready
 
 
