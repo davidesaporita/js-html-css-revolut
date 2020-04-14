@@ -13,14 +13,22 @@
 $(document).ready(function(){
     // refs
     var itemDropdown = $('.menu-item.dropdown');
+    var languages = $('.menu-item.dropdown-click');
+    var dropdownMenu = $('.dropdown-menu');
+    
     
     itemDropdown.mouseenter(function() {
+        dropdownMenu.hide();
         $(this).children('.dropdown-menu').toggle();
     });
 
     itemDropdown.mouseleave(function() {
         $(this).children('.dropdown-menu').toggle();
-    });  
+    });
+
+    languages.click(function() {
+        $(this).children('.dropdown-menu').toggle();
+    });
 
 }); // End ready
 
